@@ -1,0 +1,23 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+<%! from datetime import datetime %>
+<%! from pytz import UTC %>
+
+<div class="wrapper-footer">
+  <footer>
+    <div class="colophon">
+      <nav class="nav-colophon">
+        <ol>
+          <li><a href="${marketing_link('TOS')}">Terms of Service</a></li>
+          <li><a href="${marketing_link('PRIVACY')}">Privacy Policy</a></li>
+          <li><a href="${marketing_link('COPYRIGHT')}">Copyright</a></li>
+          <li><a href="${marketing_link('JOBS')}">Careers</a></li>
+          <li><a href="${marketing_link('CONTACT')}">Contact</a></li>
+          <li><a href="${marketing_link('FAQ')}">FAQ</a></li>
+        </ol>
+      </nav>
+    </div>
+
+  </footer>
+</div>
